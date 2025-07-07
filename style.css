@@ -19,7 +19,7 @@ header,
 }
 header {
   justify-content: space-between;
-  padding: 10px 150px;
+  padding: 10px 30px;
 }
 header div {
   color: #f9faf8;
@@ -36,8 +36,10 @@ header nav ul li a {
   margin-left: 16px;
 }
 #part_1 {
-  padding: 100px 150px;
+  padding: 60px 30px;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #part_1 .left h1 {
   font-size: 48px;
@@ -55,6 +57,7 @@ button {
   color: #f9faf8;
   border-radius: 6px;
   padding: 8px 30px;
+  cursor: pointer;
 }
 #part_1 .left button {
   border: 2px solid #3882f6;
@@ -65,12 +68,14 @@ button {
   justify-content: center;
   align-items: center;
   color: #e5e7eb;
-  max-width: 400px;
+  height: 200px;
 }
 #part_1 .right,
 #part_1 .left {
-  width: 500px;
-  height: 220px;
+  max-width: 500px;
+  min-width: 280px;
+  height: 280px;
+  flex: 1 1 300px;
 }
 #part_2 {
   display: flex;
@@ -79,7 +84,6 @@ button {
 }
 #part_2 h2 {
   font-size: 36px;
-  font-family: #1f2937;
   font-weight: 900;
   text-align: center;
 }
@@ -87,6 +91,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 #part_2 .imgs_container .img_txt img {
   width: 170px;
@@ -111,27 +116,29 @@ button {
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
-  padding: 80px 250px;
+  padding: 80px 100px;
 }
-#part_3 footer {
+#part_3 cite {
+  display: block;
   text-align: right;
   font-style: normal;
   font-weight: bold;
 }
 #part_4 {
   display: flex;
-  padding: 100px 150px;
+  padding: 100px 100px;
 }
 #part_4 .bleu {
   background-color: #3882f6;
   border-radius: 5px;
   color: #f9faf8;
-  padding: 50px 150px;
+  padding: 50px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 #part_4 .bleu div p {
   color: #e5e7ebd0;
@@ -139,7 +146,7 @@ button {
 #part_4 .bleu button {
   border: 2px solid #f9faf8;
 }
-#footer {
+footer {
   background-color: #1f2937;
   color: #e5e7eb;
   text-align: center;
